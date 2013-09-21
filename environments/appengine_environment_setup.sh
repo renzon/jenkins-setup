@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[ "$USER" != root ] && echo "You are not root!" && exit
+
 mkdir ~/bin && cd ~/bin
 
 GAE="google_appengine_1.8.4.zip"
